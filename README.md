@@ -48,5 +48,8 @@ In [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGr
     </Setter>
 </Style>
 ```
+
+KB article - [How to show the image in GroupDropArea for particular column in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/12126/how-to-show-the-image-in-groupdroparea-for-particular-column-in-wpf-datagrid-sfdatagrid)
+
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
