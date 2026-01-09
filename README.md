@@ -1,12 +1,10 @@
-# How to show the image in GroupDropArea for particular column in WPF DataGrid (SfDataGrid)?
+# How to Show the Image in GroupDropArea for Particular Column in WPF DataGrid?
 
-How to show the image in GroupDropArea for particular column in WPF DataGrid (SfDataGrid)?
+This sample illustrates how to show the image in GroupDropArea for particular column in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
 
-# About the sample
+In `DataGrid`, you can add the image in GroupDropAreaItem for particular column in `DataGrid`. In that you can bind the [GridColumn.HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_HeaderTemplate) to the content template of ContentPresenter.
 
-In [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid), you can add the image in GroupDropAreaItem for particular column by customizing it’s style. In that you can bind the GridColumn.HeaderTemplate to the content template of ContentPresenter.
-
-```Xaml
+``` xml
 <Style TargetType="{x:Type Syncfusion:GroupDropAreaItem}">
     <Setter Property="Template">
         <Setter.Value>
@@ -17,7 +15,6 @@ In [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGr
                 BorderThickness="{TemplateBinding BorderThickness}"
                 Opacity="{TemplateBinding Opacity}"
                 SnapsToDevicePixels="True">
-                    
 . . . . 
 . . . .
                     <Grid>
@@ -39,7 +36,6 @@ In [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGr
                                         ContentTemplate="{Binding Path=GridColumn.HeaderTemplate,
                                 RelativeSource={RelativeSource TemplatedParent},
                                                         Mode=TwoWay}"/>                                   
-
 . . . .
 . . . .
                 </Border>
@@ -49,7 +45,7 @@ In [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGr
 </Style>
 ```
 
-KB article - [How to show the image in GroupDropArea for particular column in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/12126/how-to-show-the-image-in-groupdroparea-for-particular-column-in-wpf-datagrid-sfdatagrid)
+![Showing image in GroupDropArea for particular column](ImageInGroupDropArea.png)
 
 ## Requirements to run the demo
- Visual Studio 2015 and above versions
+Visual Studio 2015 and above versions
